@@ -1,0 +1,117 @@
+:root {
+    --button-color: rgb(224,144,43);
+    --text-main-color: rgb(0,0,0);
+    
+    --text-font: Tahoma,Verdana,Segoe,sans-serif;
+}
+
+
+
+
+body {
+    margin: 0;
+}
+
+
+p {
+    font-family: var(--text-font);
+    color: var(--text-main-color);
+    font-size: 1.5rem;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+
+
+/* Шапка */
+header {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.logo-head {
+    margin-left: 3vh;
+    margin-right: 3vh;
+    flex-basis: 20%;
+    height: 4rem;
+}
+
+.head-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    flex-basis: 60%;
+    
+}
+
+
+.head-link-finder {
+    flex-basis: 20%;
+    margin-left: 3vh;
+    margin-right: 3vh;
+
+    border-color: var(--button-color);
+    border-style: solid;
+
+    border-radius: 0.5rem;
+    border-width: 1px;
+    
+    padding: 1rem 2rem 1rem 2rem;
+
+    white-space: nowrap;
+
+    color: var(--button-color);
+    text-transform: uppercase;
+
+}
+
+
+
+.simple-head-link {
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
+
+
+/* Основной сектор */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.plates {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.plates-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.plates-title {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.plates-img {
+    flex-basis: 50%;
+
+}
