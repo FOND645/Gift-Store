@@ -1,50 +1,48 @@
-:root {
-    --button-color: rgb(224,144,43);
-    --text-main-color: rgb(0,0,0);
-    
-    --text-font: Tahoma,Verdana,Segoe,sans-serif;
+html {
+    font-size: 1rem;
 }
 
-
-
+:root {
+    --button-color: rgb(224, 144, 43);
+    --text-main-color: rgb(0, 0, 0);
+    --plates-background: rgb(241, 241, 241);
+    --text-font: Tahoma, Verdana, Segoe, sans-serif;
+    --sign-line: rgb(247, 148, 30);
+    --black-btn-color: rgb(35, 31, 32);
+}
 
 body {
     margin: 0;
 }
 
-
 p {
     font-family: var(--text-font);
     color: var(--text-main-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
-
 
 a:link {
     text-decoration: none;
 }
 
-
-
-/* Шапка */
+/* -----------------------------------Шапка----------------------------------- */
 header {
-    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-
 }
 
-
+/* Логотип */
 .logo-head {
     margin-left: 3vh;
     margin-right: 3vh;
-    flex-basis: 20%;
-    height: 4rem;
+    height: 2rem;
+    padding-left: 2rem;
 }
 
+/* Ссылки в шапке */
 .head-links {
     display: flex;
     flex-direction: row;
@@ -53,10 +51,9 @@ header {
     margin-left: 3rem;
     margin-right: 3rem;
     flex-basis: 60%;
-    
 }
 
-
+/* Кнопка-ссылка на finder */
 .head-link-finder {
     flex-basis: 20%;
     margin-left: 3vh;
@@ -67,51 +64,241 @@ header {
 
     border-radius: 0.5rem;
     border-width: 1px;
-    
+
     padding: 1rem 2rem 1rem 2rem;
 
     white-space: nowrap;
 
     color: var(--button-color);
     text-transform: uppercase;
-
 }
-
-
 
 .simple-head-link {
     margin-left: 1rem;
     white-space: nowrap;
 }
 
-
-
-/* Основной сектор */
+/* -----------------------------------Основной раздел----------------------------------- */
 main {
     display: flex;
     flex-direction: column;
 }
 
-
+/* Контейнер для плиток */
 .plates {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
 }
 
+/* Плитка с текстом */
 .plates-container {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    flex-shrink: 1;
+    border-style: none;
+    background-color: var(--plates-background);
 }
 
+/* Заголовок плитки */
 .plates-title {
     font-size: 3rem;
     font-weight: bold;
-
 }
 
+/* Текст в плитке */
+.plates-msg {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+/* Ссылка в клитке 1 */
+.plates-link1 {
+    font-size: 1.5rem;
+}
+
+/* Ссылка в плитке 2 */
+.plates-link2 {
+    font-size: 1.5rem;
+}
+
+/* Плитка-картинка */
 .plates-img {
     flex-basis: 50%;
+}
 
+/* -----------------------------------Раздел с подарками----------------------------------- */
+.variants-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+/* Заголовок раздлеа с подарками */
+.variants-title {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Подзаголовок раздела с подарками */
+.variants-desc {
+    margin-top: none;
+    margin-bottom: 3rem;
+}
+
+/* Контейнер для плиток с подарками */
+.variant-inline {
+    display: flex;
+}
+
+/* Плитка с подарком */
+.variant-item {
+    width: 18vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    box-shadow: 4px 4px 8px var(--plates-background);
+}
+
+/* Картинка подарка */
+.variang-img {
+    width: 18vw;
+}
+
+/* Заголовок подарка */
+.variant-tilte {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* Ссылка на подарок */
+.var-link {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* -----------------------------------Желтый раздел-----------------------------------  */
+.yellow-line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--sign-line);
+    align-items: center;
+    padding: 1% 15%;
+    justify-content: space-between;
+}
+
+/* Контейнер текста желтого раздела */
+.ytext-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок желтого раздела */
+.y-ready {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 0; /* none не работает. Почему? */
+}
+
+/* Подзаголовок желтого раздела */
+.sign-text {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* Контейнер с кнопками */
+.y-btns-container {
+    display: flex;
+}
+
+/* Кнопка - искать */
+.y-btn-find {
+    border-style: none; /* А тут none применяется. Опять почему? */
+    flex-basis: auto; /* Некорректно определяются размеры элемента. Почему? */
+    border-radius: 0.5rem;
+    border-width: 2px;
+    padding: 1rem 2rem;
+    background-color: var(--black-btn-color);
+    color: white;
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-right: 5%;
+    white-space: nowrap;
+}
+
+/* Кнопка - как это работает */
+.y-btn-howit {
+    border-style: solid; /* А тут none применяется. Опять почему? */
+    flex-basis: content; /* Некорректно определяются размеры элемента. Почему? */
+    border-radius: 0.5rem;
+    border-width: 2px;
+    padding: 1rem 2rem;
+    color: var(--black-btn-color);
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-right: 5%;
+    white-space: nowrap;
+}
+
+/* -----------------------------------Раздел с блогом----------------------------------- */
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+/* Контейнер с основным комментарием типа с блога */
+.main-comment {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black-btn-color);
+}
+
+/* Изображение типа с блога */
+.blog-img {
+    height: 23rem;
+}
+
+/* Контейнер с текстом главного комментария из блога */
+.comment-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 45vw;
+}
+
+/* Имя главного комментатора */
+.comment-name {
+    color: var(--plates-background);
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    margin-right: 8rem;
+}
+
+/* Комментарий главного комментатора */
+.comment-text {
+    color: var(--plates-background);
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    margin-right: 16rem;
+}
+
+/* Ссылка в комментарии */
+.comment-link {
+    color: var(--plates-background);
+    margin-top: 0;
+    margin-bottom: 0rem;
+    margin-left: 4rem;
+    margin-right: 8rem;
 }
