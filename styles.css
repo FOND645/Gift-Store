@@ -87,6 +87,7 @@ main {
 /* Контейнер для плиток */
 .plates {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 100%;
 }
@@ -95,40 +96,40 @@ main {
 .plates-container {
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 50%;
+    height: 50vw;
     justify-content: center;
-    flex-shrink: 1;
     border-style: none;
     background-color: var(--plates-background);
 }
 
 /* Заголовок плитки */
 .plates-title {
+    padding-left: 15%;
+    padding-right: 15%;
     font-size: 3rem;
     font-weight: bold;
 }
 
 /* Текст в плитке */
 .plates-msg {
+    padding-left: 15%;
+    padding-right: 15%;
     text-align: justify;
     font-size: 1.5rem;
 }
 
-/* Ссылка в клитке 1 */
-.plates-link1 {
-    font-size: 1.5rem;
-}
-
-/* Ссылка в плитке 2 */
-.plates-link2 {
+/* Ссылка в клитке */
+.plates-link {
+    padding-left: 15%;
+    padding-right: 15%;
     font-size: 1.5rem;
 }
 
 /* Плитка-картинка */
 .plates-img {
-    flex-basis: 50%;
+    width: 50%;
+    height: 50vw;
 }
 
 /* -----------------------------------Раздел с подарками----------------------------------- */
@@ -301,4 +302,49 @@ main {
     margin-bottom: 0rem;
     margin-left: 4rem;
     margin-right: 8rem;
+}
+
+/* -----------------------------------Прочие комментарии типа из блога----------------------------------- */
+
+.other-comments-cointaner {
+    display: flex;
+    padding: 0 18%;
+}
+
+.other-comment-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3%;
+    box-shadow: 4px 4px 8px var(--plates-background);
+    padding: 1% 5%;
+    text-align: justify;
+}
+
+.other-cmt-title {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.other-cmt-link {
+    padding-top: 3rem;
+}
+
+/* -----------------------------------Футтер----------------------------------- */
+footer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-link {
+    font-weight: bolder;
+    padding: 0 15%;
 }
