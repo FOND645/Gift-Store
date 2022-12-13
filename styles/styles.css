@@ -1,0 +1,30 @@
+html {
+    font-size: 1rem;
+}
+
+:root {
+    --button-color: rgb(224, 144, 43);
+    --text-main-color: rgb(0, 0, 0);
+    --plates-background: rgb(241, 241, 241);
+    --text-font: Tahoma, Verdana, Segoe, sans-serif;
+    --sign-line: rgb(247, 148, 30);
+    --black-btn-color: rgb(35, 31, 32);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-family: var(--text-font);
+    color: var(--text-main-color);
+    font-size: 1rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+

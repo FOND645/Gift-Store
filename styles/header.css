@@ -1,0 +1,51 @@
+
+/* -----------------------------------Шапка----------------------------------- */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Логотип */
+.logo-head {
+    margin-left: 3rem;
+    height: 2rem;
+}
+
+/* Ссылки в шапке */
+.head-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    flex-basis: content;
+}
+
+/* Кнопка-ссылка на finder */
+.head-link-finder {
+    flex-basis: 20%;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    padding: 1rem 2rem 1rem 2rem;
+    border-color: var(--button-color);
+    border-style: solid;
+
+    border-radius: 0.5rem;
+    border-width: 1px;
+
+    white-space: nowrap;
+
+    color: var(--button-color);
+    text-transform: uppercase;
+}
+
+.simple-head-link {
+    white-space: nowrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
