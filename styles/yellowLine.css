@@ -1,0 +1,64 @@
+
+/* -----------------------------------Желтый раздел-----------------------------------  */
+.yellow-line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--sign-line);
+    align-items: center;
+    padding: 1% 15%;
+    justify-content: space-between;
+}
+
+/* Контейнер текста желтого раздела */
+.ytext-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок желтого раздела */
+.y-ready {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 0; /* none не работает. Почему? */
+}
+
+/* Подзаголовок желтого раздела */
+.sign-text {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* Контейнер с кнопками */
+.y-btns-container {
+    display: flex;
+}
+
+/* Кнопка - искать */
+.y-btn-find {
+    border-style: none; /* А тут none применяется. Опять почему? */
+    flex-basis: auto; /* Некорректно определяются размеры элемента. Почему? */
+    border-radius: 0.5rem;
+    border-width: 2px;
+    padding: 1rem 2rem;
+    background-color: var(--black-btn-color);
+    color: white;
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-right: 5%;
+    white-space: nowrap;
+}
+
+/* Кнопка - как это работает */
+.y-btn-howit {
+    border-style: solid; /* А тут none применяется. Опять почему? */
+    flex-basis: content; /* Некорректно определяются размеры элемента. Почему? */
+    border-radius: 0.5rem;
+    border-width: 2px;
+    padding: 1rem 2rem;
+    color: var(--black-btn-color);
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-right: 5%;
+    white-space: nowrap;
+}

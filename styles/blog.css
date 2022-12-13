@@ -1,0 +1,83 @@
+
+/* -----------------------------------Раздел с блогом----------------------------------- */
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+/* Контейнер с основным комментарием типа с блога */
+.main-comment {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black-btn-color);
+}
+
+/* Изображение типа с блога */
+.blog-img {
+    height: 23rem;
+}
+
+/* Контейнер с текстом главного комментария из блога */
+.comment-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 45vw;
+}
+
+/* Имя главного комментатора */
+.comment-name {
+    color: var(--plates-background);
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+/* Комментарий главного комментатора */
+.comment-text {
+    color: var(--plates-background);
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+/* Ссылка в комментарии */
+.comment-link {
+    color: var(--plates-background);
+    margin-top: 0;
+    margin-bottom: 0rem;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+/* -----------------------------------Прочие комментарии типа из блога----------------------------------- */
+
+.other-comments-cointaner {
+    display: flex;
+    padding: 0 18%;
+}
+
+.other-comment-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 3%;
+    justify-content: space-between;
+    box-shadow: 4px 4px 8px var(--plates-background);
+    padding: 1% 5%;
+    text-align: justify;
+}
+
+.other-cmt-title {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.other-cmt-link {
+    padding-top: 3rem;
+}
+
